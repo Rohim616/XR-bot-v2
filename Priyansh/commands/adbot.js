@@ -63,7 +63,7 @@ module.exports.run = async({api,event,args}) => {
   {body:`———»ADMIN BOT«———\n❯ Name: 𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭 🖤\n❯ Facebook: https://https://m.facebook.com/priyanshu.rajput.official\n❯ Thanks for using ${global.config.BOTNAME} bot`,
     attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
-      return request(encodeURI(`https://graph.facebook.com/100012191281263/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
+      return request(encodeURI(`https://graph.facebook.com/61572609674891/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
     
       };
